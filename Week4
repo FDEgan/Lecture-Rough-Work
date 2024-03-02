@@ -1,0 +1,77 @@
+a = 4
+b= 5
+
+if a > b:
+    print("{a} is greater than {b}")
+elif a==b:
+    print("{a} is equal to {b}")
+else:
+    print(F"{b} is greater than {a}")
+
+number = 1
+if number % 2 == 0:
+    print(f" {number} is a odd number")
+grade = 69
+if round(grade) < 40:
+    print("Fail")
+elif round(grade) < 50:
+    print("Pass")
+elif round(grade) < 60:
+    print("Merit 2")
+elif round(grade) < 70:
+    print("Merit 1")
+else:
+    print("Distinction")
+n = 10
+while (n > 0):
+    n = n - 1
+    print(n)
+else:
+    print("Done") 
+
+number = 100
+to_num = 2
+while number > to_num:
+    if number%2 == 0:
+        number = number - 2
+    print(f"The number is now {number}")
+
+import random
+guess_this = random.randint(0,100)
+guess = int(input("Please guess the number:")) 
+while guess != guess_this:
+    if guess > guess_this:
+        print("Too High")
+    else:
+        print("Too Low")
+    guess = int(input("Please guess the number:"))
+else:
+    print("You guessed it")    
+
+
+numbers = []
+number = int(input("Please guess the number:"))
+while number != 0:
+    numbers.append(number)
+    print(numbers)
+    number = int(input("Please guess the number:"))
+for value in (numbers):
+    print(value)
+
+average = float(sum(numbers))/ len(numbers)
+print(average)
+    
+
+list = []
+list.append(random.randint(0,100))
+print(list)
+howMany    = 10
+topHowMany = 3
+rangeFrom  = 0
+rangeto    = 100 
+for i in range(0,howMany):
+    numbers.append(random.randint(rangeFrom,rangeto))
+print (f"{howMany} random numbers\t {numbers}") 
+topOnes = numbers.copy()
+top_3 = topOnes.sort(reverse = True) 
+print (f"The top {topHowMany} are {top_3}") 
